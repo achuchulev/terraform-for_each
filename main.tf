@@ -15,7 +15,7 @@ resource "aws_s3_bucket" "new_bucket" {
   }
 }
 
-# Usage with a list of strings
+# Usage with a set of strings
 
 variable "subnet_ids" {
   type = list(string)
