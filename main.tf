@@ -23,7 +23,7 @@ variable "subnet_ids" {
 resource "aws_instance" "server" {
   for_each = toset(var.subnet_ids)
 
-  ami           = "ami-0400a1104d5b9caa1"
+  ami           = "ami-07ebfd5b3428b6f4d"
   instance_type = "t2.micro"
   subnet_id     = each.key # note: each.key and each.value are the same for a set
 
