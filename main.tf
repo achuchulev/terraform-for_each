@@ -2,7 +2,6 @@
 resource "aws_s3_bucket" "new_bucket" {
 
   for_each = {
-    my-tf-test-bucket = "Test"
     my-tf-dev-bucket  = "Dev"
     my-tf-prod-bucket = "Prod"
   }
