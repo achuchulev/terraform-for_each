@@ -28,6 +28,6 @@ resource "aws_instance" "server" {
   subnet_id     = each.key # note: each.key and each.value are the same for a set
 
   tags = {
-    Range = "Server in ${each.key}"
+    Range = "Server IP from ${each.key}"
   }
 }
